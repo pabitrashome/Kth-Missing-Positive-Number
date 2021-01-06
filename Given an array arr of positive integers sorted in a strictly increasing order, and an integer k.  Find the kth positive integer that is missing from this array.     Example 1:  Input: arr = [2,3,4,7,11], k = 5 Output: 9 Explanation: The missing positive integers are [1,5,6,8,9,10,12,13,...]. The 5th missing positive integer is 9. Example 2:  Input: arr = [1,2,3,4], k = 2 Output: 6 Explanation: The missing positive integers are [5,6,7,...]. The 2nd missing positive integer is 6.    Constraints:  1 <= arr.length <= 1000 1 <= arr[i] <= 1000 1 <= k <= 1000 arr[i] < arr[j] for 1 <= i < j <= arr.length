@@ -1,0 +1,19 @@
+class Solution(object):
+    def findKthPositive(self, arr, k):
+        y=True
+        i=1
+        a=[]
+        x=len(a)
+        while(y):
+            if(i in arr):
+                i+=1
+                pass 
+            else:
+                a.append(i)
+                x=len(a)
+                i+=1
+            if(x==k):
+                break
+            
+        return a[k-1]
+      
